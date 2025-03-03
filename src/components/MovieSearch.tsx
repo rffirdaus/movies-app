@@ -56,9 +56,14 @@ const MovieSearch: React.FC = () => {
           {movies.map((movie) => (
             <li
               key={movie.id}
-              className="p-4 hover:bg-blue-500 hover:bg-opacity-30 transition cursor-pointer rounded-lg"
+              className="p-4 hover:bg-blue-500 hover:bg-opacity-30 transition cursor-pointer rounded-lg flex items-center"
               onClick={() => openModal(movie)}
             >
+              <img
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                alt={movie.title}
+                className="w-[10%] rounded-md mr-4"
+              />
               {movie.title}
             </li>
           ))}
