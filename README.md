@@ -13,5 +13,5 @@ A simple React app for searching movies using The Movie Database (TMDb) API.
 
 ```sh
 git clone https://github.com/yourusername/movie-search-app.git
-cd movie-search-app
+cd movie-app
 npm install
