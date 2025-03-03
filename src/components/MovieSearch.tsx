@@ -63,7 +63,7 @@ const MovieSearch: React.FC = () => {
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   alt={movie.title}
-                  className="w-[10%] rounded-md mr-4"
+                  className="w-[30%] md:w-[10%] rounded-md mr-4"
                 />
                 <p className="w-[150px]">{movie.title}</p>
               </div>
