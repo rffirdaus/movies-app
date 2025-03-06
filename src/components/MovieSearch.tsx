@@ -38,6 +38,8 @@ const MovieSearch: React.FC = () => {
           type="text"
           placeholder="Search for a movie..."
           className="w-full p-3 border border-gray-300 rounded-lg shadow-sm text-gray-900 focus:ring-2 focus:ring-blue-500 outline-none"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
         />
 
         <div className="flex justify-between items-center mt-4 text-gray-300 text-sm">
